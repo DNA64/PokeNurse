@@ -243,7 +243,7 @@ ipcMain.on('get-players-pokemons', (event) => {
       let stamina = stats.BaseStamina + pokemon['individual_stamina']
 
       let maxCP = utils.getMaxCpForTrainerLevel(attack, defense, stamina, player.level)
-      let candyCost = utils.getStartdustCostsForPowerup(totalCpMultiplier, pokemon['num_upgrades'])
+      let candyCost = utils.getStardustCostsForPowerup(totalCpMultiplier, pokemon['num_upgrades'])
       let stardustCost = utils.getCandyCostsForPowerup(totalCpMultiplier, pokemon['num_upgrades'])
       let nextCP = utils.getCpAfterPowerup(pokemon['cp'], totalCpMultiplier)
 
